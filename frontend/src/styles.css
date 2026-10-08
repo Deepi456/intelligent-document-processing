@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap");
+@import "tailwindcss";
+
+:root { font-family: "DM Sans", sans-serif; color: #202521; background: #f5f6f3; font-synthesis: none; text-rendering: optimizeLegibility; }
+body { margin: 0; min-width: 320px; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+.font-display { font-family: "Manrope", sans-serif; }
+.panel { border: 1px solid #dfe3dd; background: #fff; box-shadow: 0 1px 2px rgb(32 37 33 / 3%); }
+.page-title { margin-top: 8px; font-family: "Manrope", sans-serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; letter-spacing: -0.04em; line-height: 1.08; }
+.section-title { margin-top: 5px; font-family: "Manrope", sans-serif; font-size: 1.05rem; font-weight: 700; letter-spacing: -0.02em; }
+.eyebrow { color: #52705a; font-size: 10px; font-weight: 700; letter-spacing: 0.18em; line-height: 1.4; text-transform: uppercase; }
+.icon-button { display: inline-flex; height: 36px; width: 36px; align-items: center; justify-content: center; border: 1px solid transparent; color: #69716a; transition: background-color 160ms ease, color 160ms ease; }
+.icon-button:hover { background: #e8ede7; color: #202521; }
+.button-primary, .button-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 4px; padding: 10px 14px; font-size: 13px; font-weight: 600; transition: all 160ms ease; }
+.button-primary { background: #52705a; color: white; box-shadow: 0 1px 2px rgb(32 37 33 / 10%); }
+.button-primary:hover { background: #3f5c47; }
+.button-secondary { border: 1px solid #cfd6ce; background: #fff; color: #4e574f; }
+.button-secondary:hover { border-color: #aeb9ae; background: #f8faf7; }
+.brand-mark { display: flex; height: 32px; width: 32px; align-items: center; justify-content: center; border-radius: 7px; background: #b7d2bc; color: #243a29; }
+.sidebar-link { display: flex; align-items: center; gap: 12px; border-radius: 5px; padding: 11px 12px; color: #aab5ad; font-size: 13px; font-weight: 500; transition: all 160ms ease; }
+.sidebar-link:hover { background: #2b342d; color: #eff4ef; }
+.sidebar-link-active { background: #35443a; color: #fff; box-shadow: inset 3px 0 #b7d2bc; }
+.avatar { display: flex; height: 34px; width: 34px; align-items: center; justify-content: center; border-radius: 50%; background: #d6e3d7; color: #38503d; font-size: 11px; font-weight: 700; }
+.status-dot { display: inline-block; height: 7px; width: 7px; border-radius: 50%; }
+.soft-icon { display: flex; height: 34px; width: 34px; align-items: center; justify-content: center; border-radius: 6px; background: #e6ece5; color: #52705a; }
+.input-shell { display: flex; min-width: min(100%, 250px); align-items: center; gap: 9px; border: 1px solid #dfe3dd; background: #fff; padding: 9px 11px; color: #8a938c; }
+.input-shell input { width: 100%; outline: none; color: #202521; font-size: 13px; }
+.input-shell:focus-within { border-color: #91aa95; box-shadow: 0 0 0 3px rgb(82 112 90 / 10%); }
+.data-table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: left; }
+.data-table th { border-bottom: 1px solid #dfe3dd; color: #7a837c; font-size: 10px; letter-spacing: 0.12em; padding: 0 12px 11px; text-transform: uppercase; }
+.data-table td { border-bottom: 1px solid #e8ebe7; color: #69716a; padding: 14px 12px; vertical-align: top; }
+.data-table tbody tr:last-child td { border-bottom: 0; }
+.status-badge { border: 1px solid #c8dacb; background: #f1f7f1; color: #52705a; font-size: 11px; padding: 4px 8px; }
+.back-link { display: inline-flex; align-items: center; gap: 7px; color: #52705a; font-size: 13px; font-weight: 600; }
+.back-link:hover { text-decoration: underline; }
+.field-label { display: block; color: #69716a; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.select-field { width: 100%; appearance: none; border: 1px solid #cfd6ce; background: #fff; margin-top: 7px; padding: 10px 12px; color: #202521; font-size: 13px; outline: none; }
+.select-field:focus { border-color: #91aa95; box-shadow: 0 0 0 3px rgb(82 112 90 / 10%); }
+.selectable-row { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 10px; text-align: left; transition: background-color 160ms ease, box-shadow 160ms ease; }
+.selectable-row:hover, .selectable-row-active { background: #f1f7f1; box-shadow: inset 3px 0 #52705a; }
+.selectable-row-card { display: block; border: 1px solid #e8ebe7; padding: 12px; }
+.selectable-row-card + .selectable-row-card { margin-top: 12px; }
+.evidence-record { border: 1px solid #cfd6ce; background: #fff; padding: 16px; }
+.loading-spinner { height: 16px; width: 16px; border: 2px solid #d6e1d7; border-top-color: #52705a; border-radius: 50%; animation: spin 700ms linear infinite; }
+.graph-layout { display: grid; min-height: 620px; grid-template-columns: minmax(0, 1fr) 280px; }
+.graph-canvas, .graph-canvas .react-flow { min-height: 620px; }
+.graph-node { min-width: 145px; max-width: 190px; border: 1px solid #b8cbbb; border-radius: 5px; background: #fff; padding: 11px 13px; box-shadow: 0 2px 8px rgb(32 37 33 / 8%); transition: border-color 160ms ease, box-shadow 160ms ease; }
+.graph-node:hover, .graph-node-selected { border-color: #52705a; box-shadow: 0 0 0 3px rgb(82 112 90 / 14%), 0 3px 10px rgb(32 37 33 / 10%); }
+.graph-node-type { color: #52705a; font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.graph-node-name { overflow: hidden; margin-top: 4px; color: #202521; font-size: 12px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
+.graph-details { border-left: 1px solid #dfe3dd; background: #fff; padding: 22px 18px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: no-preference) { .panel { animation: rise-in 320ms ease both; } }
+@keyframes rise-in { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 900px) { .graph-layout { grid-template-columns: 1fr; } .graph-details { border-left: 0; border-top: 1px solid #dfe3dd; } }

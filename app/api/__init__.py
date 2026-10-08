@@ -1,0 +1,1 @@
+"""Read-only API for the document knowledge graph."""

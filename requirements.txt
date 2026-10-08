@@ -1,0 +1,23 @@
+# Core dependencies for Intelligent Document Processing System
+# Install with: pip install -r requirements.txt
+# For an exact reproducible environment, use requirements-lock.txt instead
+
+pymupdf
+python-docx
+openpyxl
+pandas
+beautifulsoup4
+spacy
+neo4j
+fastapi
+python-multipart
+uvicorn
+bcrypt
+rapidfuzz
+pillow
+opencv-python-headless
+paddleocr
+paddlepaddle
+
+# spaCy model (install separately):
+# python -m spacy download en_core_web_sm
