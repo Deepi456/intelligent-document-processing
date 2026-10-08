@@ -105,3 +105,5 @@ htmlcov/
 # Local application files
 # =========================
 app.db
+
+data/
